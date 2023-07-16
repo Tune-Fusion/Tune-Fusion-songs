@@ -1,0 +1,13 @@
+run this: docker-compose up --build
+
+try using this:
+
+`bash
+curl -X POST -H "Content-Type: application/json" -d '{
+    "song_name": "My Awesome Song",
+    "link": "https://example.com/my-awesome-song.mp3",
+    "artist_id": 1001,
+    "user_id": 1002,
+    "upload_date": "2023-07-16"
+}' http://localhost:8080/songs
+`
